@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/level"
+        android:layout_height="0dp"
+        android:layout_width="200dp"
+        tools:layout_height="100dp"
+        android:background="#0088ff"
+        app:layout_constraintStart_toStartOf="@id/cl_parent"
+        app:layout_constraintEnd_toEndOf="@id/cl_parent"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/cl_parent"
+        app:layout_constraintTop_toTopOf="@id/cl_parent"/>
+
+    <View
+        android:id="@+id/divider_tick_right"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/cl_parent"
+        app:layout_constraintTop_toTopOf="@id/cl_parent"
+        app:layout_constraintEnd_toEndOf="@id/cl_parent"
+        android:background="@color/black"/>
+
+    <View
+        android:id="@+id/divider_tick_left"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/cl_parent"
+        app:layout_constraintTop_toTopOf="@id/cl_parent"
+        app:layout_constraintStart_toStartOf="@id/cl_parent"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_angular_readout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/divider"
+        app:layout_constraintBottom_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="@id/cl_parent"
+        app:layout_constraintEnd_toEndOf="@id/cl_parent"
+        tools:text="angularReadout#" />
+
+    <LinearLayout
+        android:id="@+id/llTestSensorOutput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSensor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="delta#"/>
+
+        <TextView
+            android:id="@+id/tvSensor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="offset#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="delta#"/>
+
+        <TextView
+            android:id="@+id/tvSensor5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="offset#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="delta#"/>
+
+        <TextView
+            android:id="@+id/tvSensor8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="offset#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="delta#"/>
+
+        <TextView
+            android:id="@+id/tvSensor11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="offset#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+
+        <TextView
+            android:id="@+id/tvSensor30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="levelHeight#"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
